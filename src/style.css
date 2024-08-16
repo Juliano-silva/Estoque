@@ -4,6 +4,64 @@
 }
 
 body{
-  background-color: rgb(51, 43, 99);
+  background-color: rgb(46, 39, 88);
   color: white;
+}
+
+body::-webkit-scrollbar{
+  width: 0px;
+}
+
+#Header{
+  background-color: red;
+  top: 0;
+  width: 100%;
+  padding: 2vh;
+}
+
+#Header > a{
+  padding: 2vh;
+  text-decoration: none;
+  color: white;
+  font-size: 2vh;
+}
+
+#Caixa_Item{
+  background-color: #252525;
+  color: white;
+  padding: 2vh;
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+#Top_Div{
+  width: 100%;
+  display: block;
+}
+#Stock_Div{
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+
+#Caixas_Painel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Caixas_Painel > div{
+  padding: 2vh;
+  border: 0.2vh solid rgb(31, 24, 70);
+  text-align: center;
+  color: rgb(140, 126, 231);
+  width: 40vh;
+  height: 9vh;
+  font-size: 2vh;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
