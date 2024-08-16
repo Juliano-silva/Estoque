@@ -13,20 +13,38 @@ body::-webkit-scrollbar{
 }
 
 #Header{
-  background-color: red;
+  background-color: rgb(30, 24, 63);
   top: 0;
   width: 100%;
   padding: 2vh;
+  display: flex;
+  font-size: 4vh;
+  justify-items: center;
+  align-items: center;
+  position: relative;
 }
 
-#Header > a{
+#Header_Link{
+  padding: 2vh;
+  position: absolute;
+  right: 0;
+  margin-right: 5vh;
+}
+
+#Header_Link > a{
   padding: 2vh;
   text-decoration: none;
   color: white;
+  cursor: pointer;
   font-size: 2vh;
 }
 
+#Header_Link > a:hover{
+  color: yellow;
+}
+
 #Caixa_Item{
+  position: relative;
   background-color: #252525;
   color: white;
   padding: 2vh;
@@ -34,6 +52,9 @@ body::-webkit-scrollbar{
   display: block;
   margin: auto;
   margin-top: 2vh;
+  cursor: pointer;
+  font-size: 2vh;
+  border-radius: 2vh;
 }
 
 #Top_Div{
@@ -65,3 +86,60 @@ body::-webkit-scrollbar{
   align-content: center;
   align-items: center;
 }
+
+#Input_Body{
+  width: 80%;
+  padding: 2vh;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: block;
+  margin: auto;
+}
+
+#Input_Body > input,#Input_Body > select,#Input_Body > button{
+  all: unset;
+  display: block;
+  margin: auto;
+  width: 80%;
+  border: 0.4vh solid rgb(140, 126, 231);
+  background-color: rgb(31, 24, 70);
+  color: white;
+  padding: 2vh;
+  margin-top: 2vh;
+  font-size: 2vh;
+  text-align: center;
+  border-radius: 1vh;
+}
+
+#Input_Body > button{
+  width: 40%;
+  cursor: pointer;
+}
+
+#Input_Body > button:hover{
+  background-color: rgb(55, 40, 139);
+  border-color: rgb(31, 24, 70);
+}
+
+#Input_Body > select{
+  width: 60%;
+}
+
+.Remover{
+  all: unset;
+  background-color: rgb(32, 30, 46);
+  padding: 2vh;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  color: yellow;
+  height: 74%;
+  top: 0;
+}
+
+#Input_Body > input::placeholder{
+  color: white;
+}
+

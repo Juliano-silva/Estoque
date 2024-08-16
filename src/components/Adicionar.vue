@@ -1,9 +1,11 @@
 <template>
-  <select id="Escolhas_Region"></select>
-  <input type="text" id="name" placeholder="Nome do Item">
-  <input type="number" id="Quantidade" placeholder="Quantidade por Item">
-  <input type="number" id="preco" placeholder="Preço do Item">
-  <button v-on:click="Click">Enviar</button>
+  <div id="Input_Body">
+    <select id="Escolhas_Region"></select>
+    <input type="text" id="name" placeholder="Nome do Item">
+    <input type="number" id="Quantidade" placeholder="Quantidade por Item">
+    <input type="number" id="preco" placeholder="Preço do Item">
+    <button v-on:click="Click">Enviar</button>
+  </div>
 </template>
 
 <script>

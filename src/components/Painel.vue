@@ -79,10 +79,10 @@ export default {
             new Chart(document.getElementById("Stock_Region"), {
                 type: types,
                 data: {
-                    labels: data.map(row => row.name),
+                    labels: data.map(row => row.regiao),
                     datasets: [{
                         label: "Quantidade de Estoque por localização",
-                        data: data.map(row => row.preco),
+                        data: data.map(row => row.quantidade),
                         borderWidth: 1,
                     }]
                 },
